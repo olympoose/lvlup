@@ -1,4 +1,4 @@
-# LVL UP 2.1 — jak zainstalować na telefonie (za darmo)
+# LVL UP 3.0 — jak zainstalować na telefonie (za darmo)
 
 W folderze są:
 
@@ -35,7 +35,7 @@ Stare dane są automatycznie przerabiane na nowy format: treningi dostają tona�
 
 ## Aktualizacja
 
-Podmień `index.html` w repozytorium. W `sw.js` zmień numer w linijce `const C='lvlup-v2.1'` (np. na `v2.2`), żeby telefony pobrały nową wersję.
+Podmień `index.html` w repozytorium. W `sw.js` zmień numer w linijce `const C='lvlup-v3.0'` (np. na `v3.1`), żeby telefony pobrały nową wersję.
 
 ## Kopia zapasowa
 
