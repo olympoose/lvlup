@@ -1,9 +1,10 @@
-# LVL UP 3.0 — jak zainstalować na telefonie (za darmo)
+# LVL UP 4.0 — jak zainstalować na telefonie (za darmo)
 
 W folderze są:
 
 - `index.html` — cała aplikacja w jednym pliku (czcionki i ikony są w środku, działa offline)
 - `manifest.webmanifest`, `sw.js`, `icons/` — pliki, dzięki którym da się ją zainstalować jak apkę i używać bez internetu
+- `zxing.min.js` — skaner kodów kreskowych (biblioteka ZXing, licencja Apache 2.0 w `zxing-LICENSE.txt`); wrzuć go razem z resztą
 
 ## Opcja 1: GitHub Pages (polecam, darmowe na zawsze)
 
@@ -35,7 +36,7 @@ Stare dane są automatycznie przerabiane na nowy format: treningi dostają tona�
 
 ## Aktualizacja
 
-Podmień `index.html` w repozytorium. W `sw.js` zmień numer w linijce `const C='lvlup-v3.0'` (np. na `v3.1`), żeby telefony pobrały nową wersję.
+Podmień `index.html` w repozytorium. W `sw.js` zmień numer w linijce `const C='lvlup-v4.0'` (np. na `v4.1`), żeby telefony pobrały nową wersję.
 
 ## Kopia zapasowa
 
@@ -50,3 +51,9 @@ Da się, opakowując ten sam kod narzędziem **Capacitor** i budując go w **Xco
 - **Android:** plik APK możesz zainstalować za darmo i bez limitu.
 
 Wersja z ekranu początkowego daje na co dzień to samo: ikonę, pełny ekran i działanie offline. Dlatego na start polecam ją.
+
+## Skaner i AI w lodówce
+
+- Skaner potrzebuje dostępu do aparatu. Działa tylko z adresu `https://` (np. GitHub Pages), nie z pliku otwartego bezpośrednio.
+- Dane produktów (kcal, białko itd.) pochodzą z darmowej bazy Open Food Facts i wymagają internetu. Produkty, których nie ma w bazie, wpisujesz raz — apka zapamięta je dla tego kodu.
+- AI w apce jest opcjonalne: wpisz klucz API Anthropic w Ustawieniach. Bez klucza przycisk „Zapytaj w Claude” kopiuje pytanie z listą produktów, które wklejasz w Claude.
